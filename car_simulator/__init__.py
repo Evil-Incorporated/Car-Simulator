@@ -1,6 +1,6 @@
 from gym.envs.registration import register
 
 register(
-    id='car_simulator-v0',
+    id='Car-Simulator-v0',
     entry_point='car_simulator.envs:Simulator',
 )
