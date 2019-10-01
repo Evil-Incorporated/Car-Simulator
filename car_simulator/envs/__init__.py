@@ -1,1 +1,1 @@
-from car_simulator.envs.car_sim_env import Simulator
+from car_simulator.envs.car_sim_env import SimulatorGym

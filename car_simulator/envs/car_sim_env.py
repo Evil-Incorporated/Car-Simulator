@@ -1,20 +1,22 @@
 import gym
 from gym import error, spaces, utils
 from gym.utils import seeding
-from panda3d.bullet import BulletWorld
+from car_simulator.envs.simulation import Simulation
 
 
-class Simulator(gym.Env):
+
+class SimulatorGym(gym.Env):
     metadata = {'render.modes':['human']}
 
-    def __init__(self):
-        pass
+    def __init__(self, offScreen=False):
+        self.car = Simulation(offScreen=offScreen)
 
-    def step(self, target):
-        pass
+    def step(self, action):
+        image, reward, collision_occured = self.car.step(action=action)
+        return reward, collision_occured
 
     def reset(self):
-        pass
+        return self.car.reset()
 
     def render(self, mode='human'):
         pass
