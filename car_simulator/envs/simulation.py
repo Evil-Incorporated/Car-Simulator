@@ -45,7 +45,7 @@ class Simulation(ShowBase):
 
 
     def initializeVariables(self):
-        self.asset_path = os.path.abspath(os.path.join(os.getcwd(), '..')) + '/'
+        self.asset_path = os.path.dirname(os.path.realpath(__file__))+'/../'
         self.initialImageBuffer = list()
         self.car_index_list = list()
         self.car_index_prec = list()
