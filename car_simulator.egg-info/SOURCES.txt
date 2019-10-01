@@ -1,6 +1,0 @@
-README.md
-car_simulator.egg-info/PKG-INFO
-car_simulator.egg-info/SOURCES.txt
-car_simulator.egg-info/dependency_links.txt
-car_simulator.egg-info/requires.txt
-car_simulator.egg-info/top_level.txt
