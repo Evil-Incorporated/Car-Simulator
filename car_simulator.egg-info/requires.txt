@@ -1,4 +1,0 @@
-gym
-opencv-python
-Pillow
-Panda3D
