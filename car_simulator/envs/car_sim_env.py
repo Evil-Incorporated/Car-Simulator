@@ -13,7 +13,7 @@ class SimulatorGym(gym.Env):
 
     def step(self, action):
         image, reward, collision_occured = self.car.step(action=action)
-        return reward, collision_occured
+        return image, reward, collision_occured
 
     def reset(self):
         return self.car.reset()
